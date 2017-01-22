@@ -77,7 +77,7 @@ app.get('/:username', handler);
 
 app.get('/version', (req, res) => res.send(require('./package.json').version));
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   debug(`Listening on port ${port}.`);
